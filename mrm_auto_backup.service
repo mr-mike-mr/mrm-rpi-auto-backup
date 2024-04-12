@@ -1,0 +1,9 @@
+[Unit]
+Description=MRM RPI Auto Backup
+
+[Service]
+ExecStart=/usr/bin/backup.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
