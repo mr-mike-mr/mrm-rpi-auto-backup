@@ -20,3 +20,7 @@ done
 at now + ${days_to_next_backup} days <<EOF
 bash /usr/bin/backup.sh
 EOF
+
+# update
+apt update
+apt upgrade
